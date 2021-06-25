@@ -1,0 +1,16 @@
+
+<div class="user_container">
+  <h1>Account Info</h1>
+  <%= simple_form_for [@user] do |f| %>
+    <%= f.input :First_name, label: 'First Name' %>
+    <%= f.input :Last_name, label: 'Last Name' %>
+    <%= f.submit "Update! ⚙️", class: 'btn btn-outline-success btn-sm' %>
+  <% end %>
+  <br>
+    <%= link_to edit_user_registration_path do %>
+    <div> Edit Password </div>
+  <% end %>
+</div>
+
+
+
